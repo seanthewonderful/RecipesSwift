@@ -9,10 +9,21 @@ import SwiftUI
 
 struct RecipesView: View {
     var body: some View {
-        List(recipes) { recipe in
-            RecipeItemView(recipe: recipe)
+        VStack {
+            Text("Recipes")
+            HStack {
+                NavigationView { // This is deprecated.
+                    List(recipes) { recipe in
+                        NavigationLink {
+                            RecipeDetailView()
+                        } label: {
+                            RecipeItemView(recipe: recipe)
+                            }
+                        }
+                    }
+                }
+            }
         }
-    }
 }
 
 private var recipes = [
@@ -27,19 +38,19 @@ private var recipes = [
     
     Recipe(
         id: "2",
-        title: "Rice Pudding",
-        cookTime: 30,
-        author: "Cambodia",
-        ingredients: [Ingredient(quantity: 2, item: "Cups of Rice"), Ingredient(quantity: 4, item: "Cups of Pudding")],
+        title: "Taco Salad",
+        cookTime: 20,
+        author: "Mexico",
+        ingredients: [Ingredient(quantity: 2, item: "Cups of Tacos"), Ingredient(quantity: 4, item: "Cups of Salad")],
         directions: []
     ),
     
     Recipe(
         id: "3",
-        title: "Rice Pudding",
-        cookTime: 30,
-        author: "Cambodia",
-        ingredients: [Ingredient(quantity: 2, item: "Cups of Rice"), Ingredient(quantity: 4, item: "Cups of Pudding")],
+        title: "Linguini Ravioli Cavatappi",
+        cookTime: 40,
+        author: "Sicily",
+        ingredients: [Ingredient(quantity: 2, item: "Cups of Linguini"), Ingredient(quantity: 4, item: "Cups of Ravioli")],
         directions: []
     )
 ]

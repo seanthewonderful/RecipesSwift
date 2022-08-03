@@ -10,10 +10,7 @@ import SwiftUI
 struct RecipesView: View {
     var body: some View {
         List(recipes) { recipe in
-            VStack {
-                Text(recipe.title)
-                Text("\(recipe.cookTime) minutes")
-            }
+            RecipeItemView(recipe: recipe)
         }
     }
 }

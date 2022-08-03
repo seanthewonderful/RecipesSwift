@@ -11,8 +11,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            Text("The First Tab")
-                .badge(10)
+            RecipesView()
                 .tabItem {
                     Image(systemName: "book")
                     Text("Recipes")

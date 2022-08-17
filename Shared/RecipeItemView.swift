@@ -12,18 +12,22 @@ struct RecipeItemView: View {
     
     var body: some View {
 
-        HStack {
+        HStack (spacing: 0) {
             AsyncImage(url: URL(string:"https://popmenucloud.com/cdn-cgi/image/width=1200,height=630,format=auto,fit=cover/hfxlgkwn/0e4a7f6e-b58e-4828-8e7f-16f0d27cb4d2.jpg")
             ) { image in
-                image.resizable()
+                image
+                    .resizable()
+                    .scaledToFit()
+                    .frame(minWidth: 0, maxWidth: .infinity)
             } placeholder: {
                 ProgressView()
+                    .frame(minWidth: 0, maxWidth: .infinity)
             }
             Spacer()
             VStack {
                 Text(recipe.title)
                 Text("\(recipe.cookTime) minutes")
-            }
+            }.frame(minWidth: 0, maxWidth: .infinity)
         }.frame(height: 150)    }
 }
 

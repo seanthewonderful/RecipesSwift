@@ -11,7 +11,7 @@ struct RecipesView: View {
     var body: some View {
         VStack {
             Text("Recipes")
-            HStack {
+
                 NavigationView { // This is deprecated.
                     List(recipes) { recipe in
                         NavigationLink {
@@ -20,7 +20,6 @@ struct RecipesView: View {
                             RecipeItemView(recipe: recipe)
                             }
                         }
-                    }
                 }
             }
         }

@@ -11,6 +11,10 @@
 		BF5CBBCE289A030C004E2961 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5CBBCC289A030C004E2961 /* RecipeDetailView.swift */; };
 		BFBDCA462890CCEB00456C63 /* RecipeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBDCA452890CCEB00456C63 /* RecipeItemView.swift */; };
 		BFBDCA472890CCEB00456C63 /* RecipeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBDCA452890CCEB00456C63 /* RecipeItemView.swift */; };
+		BFC937A628B5B4780099E962 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC937A528B5B4780099E962 /* FavoritesView.swift */; };
+		BFC937A728B5B4780099E962 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC937A528B5B4780099E962 /* FavoritesView.swift */; };
+		BFC937A928B5B6480099E962 /* FavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC937A828B5B6480099E962 /* FavoritesService.swift */; };
+		BFC937AA28B5B6480099E962 /* FavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC937A828B5B6480099E962 /* FavoritesService.swift */; };
 		BFCAC81B288794F10073B3D4 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCAC81A288794F10073B3D4 /* Tests_iOS.swift */; };
 		BFCAC81D288794F10073B3D4 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCAC81C288794F10073B3D4 /* Tests_iOSLaunchTests.swift */; };
 		BFCAC827288794F10073B3D4 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCAC826288794F10073B3D4 /* Tests_macOS.swift */; };
@@ -47,6 +51,8 @@
 /* Begin PBXFileReference section */
 		BF5CBBCC289A030C004E2961 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		BFBDCA452890CCEB00456C63 /* RecipeItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeItemView.swift; sourceTree = "<group>"; };
+		BFC937A528B5B4780099E962 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		BFC937A828B5B6480099E962 /* FavoritesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesService.swift; sourceTree = "<group>"; };
 		BFCAC802288794EF0073B3D4 /* RecipeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAppApp.swift; sourceTree = "<group>"; };
 		BFCAC803288794EF0073B3D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BFCAC804288794F10073B3D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,6 +119,8 @@
 				BFCAC803288794EF0073B3D4 /* ContentView.swift */,
 				BFCAC804288794F10073B3D4 /* Assets.xcassets */,
 				BFCAC83E288799210073B3D4 /* RecipesView.swift */,
+				BFC937A528B5B4780099E962 /* FavoritesView.swift */,
+				BFC937A828B5B6480099E962 /* FavoritesService.swift */,
 				BF5CBBCC289A030C004E2961 /* RecipeDetailView.swift */,
 				BFBDCA452890CCEB00456C63 /* RecipeItemView.swift */,
 				BFCAC841288799DD0073B3D4 /* Recipe.swift */,
@@ -319,6 +327,8 @@
 				BF5CBBCD289A030C004E2961 /* RecipeDetailView.swift in Sources */,
 				BFBDCA462890CCEB00456C63 /* RecipeItemView.swift in Sources */,
 				BFCAC83F288799220073B3D4 /* RecipesView.swift in Sources */,
+				BFC937A628B5B4780099E962 /* FavoritesView.swift in Sources */,
+				BFC937A928B5B6480099E962 /* FavoritesService.swift in Sources */,
 				BFCAC82A288794F10073B3D4 /* RecipeAppApp.swift in Sources */,
 				BFCAC842288799DD0073B3D4 /* Recipe.swift in Sources */,
 			);
@@ -332,6 +342,8 @@
 				BF5CBBCE289A030C004E2961 /* RecipeDetailView.swift in Sources */,
 				BFBDCA472890CCEB00456C63 /* RecipeItemView.swift in Sources */,
 				BFCAC840288799220073B3D4 /* RecipesView.swift in Sources */,
+				BFC937A728B5B4780099E962 /* FavoritesView.swift in Sources */,
+				BFC937AA28B5B6480099E962 /* FavoritesService.swift in Sources */,
 				BFCAC82B288794F10073B3D4 /* RecipeAppApp.swift in Sources */,
 				BFCAC843288799DD0073B3D4 /* Recipe.swift in Sources */,
 			);

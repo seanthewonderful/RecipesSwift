@@ -10,16 +10,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        let service = inMemoryFavoritesService()
+        
         TabView {
             RecipesView()
                 .tabItem {
                     Image(systemName: "book")
                     Text("Recipes")
                 }
-            Text("Another Tab")
+            FavoritesView()
                 .tabItem {
-                    Image(systemName: "2.square.fill")
-                    Text("Second")
+                    Image(systemName: "heart")
+                    Text("Favorites")
                 }
             Text("The Last Tab")
                 .tabItem {

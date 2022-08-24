@@ -9,6 +9,8 @@ import SwiftUI
 
 struct RecipeItemView: View {
     let recipe: Recipe
+    let service: favoritesService
+    @State var isFavorite: Bool = false
     
     var body: some View {
 
@@ -25,6 +27,14 @@ struct RecipeItemView: View {
             }
             Spacer()
             VStack {
+                Image(systemName: isFavorite ? "heart.fill" : "heart").onTapGesture {
+                    if isFavorite {
+                        service.removeRecipeFromFavorites(recipe: recipe)
+                    } else {
+                        service.addRecipeToFavorites(recipe: recipe)
+                    }
+                    isFavorite.toggle()
+                }
                 Text(recipe.title)
                 Text("\(recipe.cookTime) minutes")
             }.frame(minWidth: 0, maxWidth: .infinity)
@@ -40,7 +50,7 @@ struct RecipeItemView_Previews: PreviewProvider {
             author: "Cambodia",
             ingredients: [Ingredient(quantity: 2, item: "Cups of Rice"), Ingredient(quantity: 4, item: "Cups of Pudding")],
             directions: ["Cook it"]
-            )
+            ), service: inMemoryFavoritesService()
         )
     }
 }

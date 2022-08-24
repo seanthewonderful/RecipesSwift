@@ -17,7 +17,7 @@ struct RecipesView: View {
                         NavigationLink {
                             RecipeDetailView()
                         } label: {
-                            RecipeItemView(recipe: recipe)
+                            RecipeItemView(recipe: recipe, service: inMemoryFavoritesService())
                             }
                         }
                 }
